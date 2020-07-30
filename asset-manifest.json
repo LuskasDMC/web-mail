@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/web-mail/static/js/main.d29bd24f.chunk.js",
+    "main.js.map": "/web-mail/static/js/main.d29bd24f.chunk.js.map",
+    "runtime-main.js": "/web-mail/static/js/runtime-main.a8c088dd.js",
+    "runtime-main.js.map": "/web-mail/static/js/runtime-main.a8c088dd.js.map",
+    "static/css/2.56f76b2b.chunk.css": "/web-mail/static/css/2.56f76b2b.chunk.css",
+    "static/js/2.12d1ac03.chunk.js": "/web-mail/static/js/2.12d1ac03.chunk.js",
+    "static/js/2.12d1ac03.chunk.js.map": "/web-mail/static/js/2.12d1ac03.chunk.js.map",
+    "index.html": "/web-mail/index.html",
+    "precache-manifest.85da610a3910c9ffff1956d51504b5df.js": "/web-mail/precache-manifest.85da610a3910c9ffff1956d51504b5df.js",
+    "service-worker.js": "/web-mail/service-worker.js",
+    "static/css/2.56f76b2b.chunk.css.map": "/web-mail/static/css/2.56f76b2b.chunk.css.map",
+    "static/js/2.12d1ac03.chunk.js.LICENSE.txt": "/web-mail/static/js/2.12d1ac03.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/web-mail/static/media/fa-solid-900.ee09ad75.woff",
+    "static/media/us_flag.png": "/web-mail/static/media/us_flag.1e8ec4a6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8c088dd.js",
+    "static/css/2.56f76b2b.chunk.css",
+    "static/js/2.12d1ac03.chunk.js",
+    "static/js/main.d29bd24f.chunk.js"
+  ]
+}
