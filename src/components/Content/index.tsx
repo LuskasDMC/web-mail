@@ -44,11 +44,13 @@ const Content: React.FC<IProps> = ({messages, handleArchiveMessages}) => {
     }
   }
 
-  const handleSelectAllCards = (allIsChecked:boolean) => {
-    if(!allIsChecked){
-      setCardsSelected(messages.subMenuItems?.map(el => el.id))
-    }else {
-      setCardsSelected([])
+  const handleSelectAllCards = () => {
+    if(messages){
+      if(cardsSelected.length === messages?.subMenuItems?.length){
+        setCardsSelected(messages.subMenuItems?.map(el => el.id))
+      }else {
+        setCardsSelected([])
+      }
     }
   }
     
@@ -61,8 +63,8 @@ const Content: React.FC<IProps> = ({messages, handleArchiveMessages}) => {
           <Options>
             <span>
               <RadioButton 
-                onClick={() =>handleSelectAllCards(cardsSelected.length === messages.subMenuItems?.length)} 
-                isChecked={cardsSelected.length === messages.subMenuItems?.length}
+                onClick={handleSelectAllCards} 
+                isChecked={cardsSelected.length === messages?.subMenuItems?.length} 
               /> 
               <Button onClick={()=>{}}>{language.content.assign}</Button>
               <Button onClick={()=>handleArchiveMessages(cardsSelected)}>{language.content.archive}</Button>

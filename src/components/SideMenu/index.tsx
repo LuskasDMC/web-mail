@@ -50,7 +50,7 @@ const SideMenu: React.FC<IProps> = ({handleFetchMessage}) => {
 
     useEffect(() => {
         (async() => {
-            const response = await fetch('http://my-json-server.typicode.com/EnkiGroup/DesafioReactEncontact/menus')
+            const response = await fetch('https://my-json-server.typicode.com/EnkiGroup/DesafioReactEncontact/menus')
             const result:IMenu[] = await response.json()
             setMenus(result)
         })()
@@ -108,7 +108,7 @@ const SideMenu: React.FC<IProps> = ({handleFetchMessage}) => {
                         {menus.map((menu, index) => {
                             return (
                                 <>
-                                    <li onClick={() => handleToggleTabs(menu.id)}>
+                                    <li onClick={(evt) => handleToggleTabs(menu.id)}>
                                         <div>
                                             <span>
                                                 <i className="fas fa-caret-down fa-lg" style={{transform:tab === menu.id ? 'rotate(180deg)' : 'rotate(0deg)'}}/>
@@ -118,7 +118,7 @@ const SideMenu: React.FC<IProps> = ({handleFetchMessage}) => {
                                         </div>
                                         <CollapseList open={tab === menu.id} qtySubMenu={menu.subMenus.length}>
                                             {menu.subMenus.map((subMenu,index2) =>  (
-                                                <li onClick={() => handleFetchMessage(subMenu.id)}>
+                                                <li onClick={(evt) => {handleFetchMessage(subMenu.id); evt.stopPropagation()}}>
                                                     <span>{subMenu.name}</span> 
                                                     <span>15</span>
                                                 </li>

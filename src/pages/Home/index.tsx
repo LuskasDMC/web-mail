@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import { Container } from './styles';
 import SideMenu from '../../components/SideMenu/index'
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
     const [messages,setMessages] = useState<IMessages>({} as IMessages)
 
     const handleFetchMessage = async(id:number) => {
-        const response = await fetch(`http://my-json-server.typicode.com/EnkiGroup/DesafioReactEncontact/items/${id}`)
+        const response = await fetch(`https://my-json-server.typicode.com/EnkiGroup/DesafioReactEncontact/items/${id}`)
         const result = await response.json()
         setMessages(result)
     }
