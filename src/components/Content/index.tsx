@@ -46,10 +46,21 @@ const Content: React.FC<IProps> = ({messages, handleArchiveMessages}) => {
 
   const handleSelectAllCards = () => {
     if(messages){
-      if(cardsSelected.length === messages?.subMenuItems?.length){
+      console.log('bbbb')
+      if(cardsSelected.length !== messages?.subMenuItems?.length){
         setCardsSelected(messages.subMenuItems?.map(el => el.id))
       }else {
         setCardsSelected([])
+      }
+    }
+  }
+
+  const veirifyAllCards = () => {
+    if(messages.subMenuItems !== undefined){
+      if(cardsSelected.length === messages?.subMenuItems?.length){
+        return true
+      }else{
+        return false
       }
     }
   }
@@ -64,7 +75,7 @@ const Content: React.FC<IProps> = ({messages, handleArchiveMessages}) => {
             <span>
               <RadioButton 
                 onClick={handleSelectAllCards} 
-                isChecked={cardsSelected.length === messages?.subMenuItems?.length} 
+                isChecked={veirifyAllCards()} 
               /> 
               <Button onClick={()=>{}}>{language.content.assign}</Button>
               <Button onClick={()=>handleArchiveMessages(cardsSelected)}>{language.content.archive}</Button>
