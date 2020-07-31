@@ -46,7 +46,6 @@ const Content: React.FC<IProps> = ({messages, handleArchiveMessages}) => {
 
   const handleSelectAllCards = () => {
     if(messages){
-      console.log('bbbb')
       if(cardsSelected.length !== messages?.subMenuItems?.length){
         setCardsSelected(messages.subMenuItems?.map(el => el.id))
       }else {

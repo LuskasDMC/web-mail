@@ -5,7 +5,7 @@ import Home from './pages/Home/index'
 import Login from './pages/Login/index'
 
 export default  () => {
-  const auth:{isLogged:boolean} = JSON.parse(localStorage.getItem('auth') as string)
+  const auth:{isLogged:boolean} = JSON.parse(localStorage.getItem('auth') as string) || false
   if(auth.isLogged){
     return (
       <Switch>
