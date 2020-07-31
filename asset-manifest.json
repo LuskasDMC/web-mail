@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/web-mail/static/js/main.2d250273.chunk.js",
-    "main.js.map": "/web-mail/static/js/main.2d250273.chunk.js.map",
+    "main.js": "/web-mail/static/js/main.9e2dfd2d.chunk.js",
+    "main.js.map": "/web-mail/static/js/main.9e2dfd2d.chunk.js.map",
     "runtime-main.js": "/web-mail/static/js/runtime-main.a8c088dd.js",
     "runtime-main.js.map": "/web-mail/static/js/runtime-main.a8c088dd.js.map",
     "static/css/2.56f76b2b.chunk.css": "/web-mail/static/css/2.56f76b2b.chunk.css",
     "static/js/2.84bb40c9.chunk.js": "/web-mail/static/js/2.84bb40c9.chunk.js",
     "static/js/2.84bb40c9.chunk.js.map": "/web-mail/static/js/2.84bb40c9.chunk.js.map",
     "index.html": "/web-mail/index.html",
-    "precache-manifest.efcaebd42339361169a35d150b108778.js": "/web-mail/precache-manifest.efcaebd42339361169a35d150b108778.js",
+    "precache-manifest.0134a52d932a94cd1c99aeccc728c5aa.js": "/web-mail/precache-manifest.0134a52d932a94cd1c99aeccc728c5aa.js",
     "service-worker.js": "/web-mail/service-worker.js",
     "static/css/2.56f76b2b.chunk.css.map": "/web-mail/static/css/2.56f76b2b.chunk.css.map",
     "static/js/2.84bb40c9.chunk.js.LICENSE.txt": "/web-mail/static/js/2.84bb40c9.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.a8c088dd.js",
     "static/css/2.56f76b2b.chunk.css",
     "static/js/2.84bb40c9.chunk.js",
-    "static/js/main.2d250273.chunk.js"
+    "static/js/main.9e2dfd2d.chunk.js"
   ]
 }
